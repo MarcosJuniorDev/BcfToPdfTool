@@ -120,23 +120,6 @@ jpackage --type exe --input target --name BcfToPdfTool --main-jar BcfToPdfTool-1
 
 ---
 
-## 🏷️ Como Fazer um Release no GitHub
-
-O workflow do GitHub Actions em [`.github/workflows/release.yml`](.github/workflows/release.yml) é acionado automaticamente ao criar uma tag de versão:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-O GitHub Actions irá:
-1. Compilar o projeto no Linux e no Windows utilizando o JDK 25.
-2. Empacotar os instaladores `.exe`, `.deb` e `.rpm`.
-3. Criar uma nova Release pública no GitHub e anexar os instaladores automaticamente.
-
-*(Você também pode acionar o workflow manualmente na aba **Actions** do GitHub via **Run workflow**).*
-
----
 
 ## 🧪 Executando os Testes
 
